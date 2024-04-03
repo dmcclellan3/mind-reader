@@ -5,6 +5,7 @@ body {
     margin: 2em;
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
 
   }
   
@@ -12,4 +13,12 @@ body {
     font-style: italic;
     color: rgb(157, 156, 156);
     position: center;
+  }
+
+  .container{
+    display: flexbox;
+    background-color: aqua;
+    text-align: center;
+    border: 0.5rem
+
   }
