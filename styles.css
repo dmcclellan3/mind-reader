@@ -1,0 +1,15 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+  }
+  
+  h1 {
+    font-style: italic;
+    color: rgb(157, 156, 156);
+    position: center;
+  }
