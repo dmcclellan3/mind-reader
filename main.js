@@ -1,10 +1,10 @@
 // main.js
-let topText = document.getElementById("top-text")
-let subText = document.getElementById("sub-text")
-let lowText = document.getElementById("low-text")
-let stagesBtn = document.getElementById("stages-button")
-let nextBtn = document.getElementById("next-button")
-let resetBtn = document.getElementById("reset-button")
+const topText = document.getElementById("top-text")
+const subText = document.getElementById("sub-text")
+const lowText = document.getElementById("low-text")
+const stagesBtn = document.getElementById("stages-button")
+const nextBtn = document.getElementById("next-button")
+const resetBtn = document.getElementById("reset-button")
 stagesBtn.addEventListener("click", () => { 
   screen = screen + 1
   screenChange()
@@ -31,6 +31,7 @@ function screenChange() {
             stagesBtn.classList.remove("d-none")
             lowText.classList.add("d-none")
             subText.classList.add("d-none")
+            topText.classList.remove("d-none")
             break;
         
         case 2: 
@@ -60,12 +61,8 @@ function screenChange() {
             lowText.textContent = "Note the symbol beside the number"
             resetBtn.classList.remove("d-none")
             nextBtn.classList.add("d-none")
-            topText.textContent.add("d-none")
+            topText.classList.add("d-none")
             break;
-
-
-
-
 
     }
 
