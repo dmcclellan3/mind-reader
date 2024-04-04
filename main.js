@@ -4,14 +4,20 @@ let subText = document.getElementById("sub-text")
 let lowText = document.getElementById("low-text")
 let stagesBtn = document.getElementById("stages-button")
 let nextBtn = document.getElementById("next-button")
+let resetBtn = document.getElementById("reset-button")
 stagesBtn.addEventListener("click", () => { 
   screen = screen + 1
   screenChange()
 }) 
 nextBtn.addEventListener("click", () => {
-screen = screen + 1
-screenChange()
+    screen = screen + 1
+    screenChange()
 })
+resetBtn.addEventListener("click", () => {
+    screen = 1
+    screenChange()
+})
+
 
 let screen = 1
 
@@ -21,21 +27,25 @@ function screenChange() {
         case 1:
             topText.textContent = "I can read your mind"
             nextBtn.classList.add("d-none")
-
+            resetBtn.classList.add("d-none")
+            stagesBtn.classList.remove("d-none")
+            lowText.classList.add("d-none")
+            subText.classList.add("d-none")
             break;
         
         case 2: 
             topText.textContent = "Pick a number between 0-99"
+            lowText.textContent = "When you have your number click next"
             nextBtn.classList.remove("d-none")
             stagesBtn.classList.add("d-none")
-
-
             break;
         
         case 3:
             topText.textContent = "Add both digits together to get a new number" 
             subText.textContent = "Ex. 14 is 1 + 4 = 5"
+            subText.classList.remove("d-none")
             lowText.textContent = "Click next to proceed"
+            lowText.classList.remove("d-none")
             stagesBtn.classList.add("d-none")
             break;
 
@@ -48,6 +58,10 @@ function screenChange() {
         case 5:
             subText.textContent = "Find your new number"
             lowText.textContent = "Note the symbol beside the number"
+            resetBtn.classList.remove("d-none")
+            nextBtn.classList.add("d-none")
+            topText.textContent.add("d-none")
+            break;
 
 
 
