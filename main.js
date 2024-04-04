@@ -28,7 +28,7 @@ switch (screen){
 
 }
 
-//add switch statement for each page
+
 
 function init(){
     
