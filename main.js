@@ -37,7 +37,7 @@ function screenChange() {
             break;
         
         case 2: 
-            topText.textContent = "Pick a number between 1-99"
+            topText.textContent = "Pick a number between 0-99"
             lowText.textContent = "When you have your number click next"
             lowText.classList.remove("d-none")
             nextBtn.classList.remove("d-none")
