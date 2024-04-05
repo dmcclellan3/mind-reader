@@ -15,4 +15,8 @@ body {
     font-style: italic;
     color: rgb(157, 156, 156);
   }
+  .fixed-icons{
+    max-height: 60vh;
+    overflow: scroll;
+  }
 
