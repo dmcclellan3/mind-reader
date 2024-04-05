@@ -68,6 +68,9 @@ function screenChange() {
             bootstrapIcons.classList.remove("d-none")
             break;
 
+        
+            
+
     }
 
 }
