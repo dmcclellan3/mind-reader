@@ -71,8 +71,8 @@ function screenChange() {
 screenChange()
 
 
-function init(){
+// function init(){
     
-  }
+//   }
   
-  init()
+//   init()
