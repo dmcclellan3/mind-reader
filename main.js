@@ -63,12 +63,17 @@ function screenChange() {
             subText.textContent = "Find your new number"
             lowText.textContent = "Note the symbol beside the number"
             resetBtn.classList.remove("d-none")
-            nextBtn.classList.add("d-none")
             topText.classList.add("d-none")
             bootstrapIcons.classList.remove("d-none")
             break;
 
-        
+        case 6:
+            topText.textContent = "Your symbol is..."
+            bootstrapIcons.classList.add("d-none")
+            subText.classList.add("d-none")
+            lowText.classList.add("d-none")
+            topText.classList.remove("d-none")
+            break;
             
 
     }
