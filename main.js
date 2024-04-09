@@ -6,6 +6,7 @@ const goBtn = document.getElementById("go-button")
 const nextBtn = document.getElementById("next-button")
 const resetBtn = document.getElementById("reset-button")
 const bootstrapIcons = document.getElementById("bootstrap-icons")
+const symbol = document.getElementById("symbol")
 goBtn.addEventListener("click", () => { 
   screen = screen + 1
   screenChange()
@@ -69,6 +70,7 @@ function screenChange() {
 
         case 6:
             topText.textContent = "Your symbol is..."
+            
             bootstrapIcons.classList.add("d-none")
             subText.classList.add("d-none")
             lowText.classList.add("d-none")
