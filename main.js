@@ -69,8 +69,8 @@ function screenChange() {
             break;
 
         case 6:
-            topText.textContent = "Your symbol is..."
-            
+            const iconHTML = '<i class="bi bi-coin h3"></i>';
+            topText.innerHTML = `Your symbol is...${iconHTML}`
             bootstrapIcons.classList.add("d-none")
             subText.classList.add("d-none")
             lowText.classList.add("d-none")
